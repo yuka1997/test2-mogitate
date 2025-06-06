@@ -1,0 +1,142 @@
+.header {
+    background: #FFFFFF;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    font-family: 'jsMath-cmti10', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F5C800;
+    text-decoration: none;
+}
+
+.product-list__title,
+.product-search__sort-title,
+.register-form__title {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+.form__error {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FD0707;
+    margin-top: 0.25rem;
+}
+
+.register-form__input,
+.update-form__input,
+.register-form__textarea,
+.update-form__textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #E0DFDE;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+}
+
+.register-form__label,
+.update-form__label {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.register-form__group,
+.update-form__group {
+    margin-bottom: 1.5rem;
+}
+
+.register-form__file,
+.update-form__input[type="file"] {
+    margin-top: 0.5rem;
+}
+
+.register-form__checkbox-group,
+.update-form__checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.register-form__checkbox-label input[type="checkbox"],
+.update-form__checkbox-label input[type="checkbox"] {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #4B4B4B;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 0.5rem;
+}
+
+.register-form__checkbox-label input[type="checkbox"]:checked::before,
+.update-form__checkbox-label input[type="checkbox"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: #4B4B4B;
+    border-radius: 50%;
+}
+
+.register-form__checkbox-label,
+.update-form__checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.register-form__buttons,
+.update-form__button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.register-form__back-button,
+.update-form__back-button {
+    padding: 0.5rem 1rem;
+    background-color: #E0DFDE;
+    color: #4B4B4B;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.product-search__submit-button,
+.register-form__submit-button,
+.update-form__submit-button {
+    padding: 0.5rem 1rem;
+    background-color: #F5C800;
+    color: #4B4B4B;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
