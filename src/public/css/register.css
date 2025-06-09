@@ -1,7 +1,7 @@
 .register-form__container {
-    max-width: 600px;
-    margin: 3rem auto;
-    padding: 2rem;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
 .register-form__title {
@@ -11,5 +11,21 @@
 
 .register-form__textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 160px;
+}
+
+.register-form__label {
+    gap: 0.5em;
+}
+
+.label__required {
+    background-color: #FD0707;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 100%; padding: 0px 5px;
+}
+
+.label__select {
+    color: #FD0707;
+    font-size: 12px;
 }

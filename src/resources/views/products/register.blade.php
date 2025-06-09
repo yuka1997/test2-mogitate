@@ -7,11 +7,12 @@
 @section('content')
 <div class="register-form__container">
     <h2 class="register-form__title">商品登録</h2>
-
     <form class="register-form" action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="register-form__group">
-            <label for="name" class="register-form__label">商品名</label>
+            <label for="name" class="register-form__label">商品名
+                <span class="label__required">必須</span>
+            </label>
             <input type="text" id="name" name="name" value="{{ old('name') }}" class="register-form__input" placeholder="商品名を入力">
             <div class="form__error">
                 @error('name')
@@ -21,7 +22,9 @@
         </div>
 
         <div class="register-form__group">
-            <label for="price" class="register-form__label">値段</label>
+            <label for="price" class="register-form__label">値段
+                <span class="label__required">必須</span>
+            </label>
             <input type="number" id="price" name="price" value="{{ old('price') }}" class="register-form__input" placeholder="値段を入力">
             <div class="form__error">
                 @error('price')
@@ -31,7 +34,10 @@
         </div>
 
         <div class="register-form__group">
-            <label for="image" class="register-form__label">商品画像</label>
+            <label for="image" class="register-form__label">商品画像
+                <span class="label__required">必須</span>
+                <span class="label__select">複数選択可</span>
+            </label>
             <input type="file" id="image" name="image" class="register-form__file">
             <div class="form__error">
                 @error('image')
@@ -41,7 +47,9 @@
         </div>
 
         <div class="register-form__group">
-            <label class="register-form__label">季節</label>
+            <label class="register-form__label">季節
+                <span class="label__required">必須</span>
+            </label>
             <div class="register-form__checkbox-group">
                 @foreach ($seasons as $season)
                     <label class="register-form__checkbox-label">
@@ -58,7 +66,9 @@
         </div>
 
         <div class="register-form__group">
-            <label for="description" class="register-form__label">商品説明</label>
+            <label for="description" class="register-form__label">商品説明
+                <span class="label__required">必須</span>
+            </label>
             <textarea id="description" name="description" class="register-form__textarea" placeholder="商品の説明を入力">{{ old('description') }}</textarea>
             <div class="form__error">
                 @error('description')
